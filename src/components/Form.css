@@ -1,0 +1,38 @@
+.college {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  border: 1px solid;
+  overflow: auto;
+}
+span {
+  color: red;
+  position: relative;
+  bottom: 23px;
+  left: 82px;
+}
+.mn {
+  display: flex;
+  flex-direction: column;
+}
+.red {
+  position: relative;
+  margin: 10px;
+}
+.asides {
+  height: 200px;
+  width: 200px;
+  left: 1500px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shift {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}

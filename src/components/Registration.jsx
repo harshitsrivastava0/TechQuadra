@@ -58,7 +58,7 @@ const Registration = () => {
         />
         <button
           onClick={() => {
-            cityList(_);
+            cityList();
           }}
         >
           ADD

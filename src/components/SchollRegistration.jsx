@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./SchollRegistration.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { TfiWrite } from "react-icons/tfi";
 
 const SchollRegistration = () => {
   let [school, setSchool] = useState([]);
@@ -35,37 +37,53 @@ const SchollRegistration = () => {
     cityList();
   }, []);
   return (
-    <section className="sechoolreg">
-      <article>
-        <div>School Registration</div>
-        <Link to={"/home/SchollRegistration"}>School List</Link>
-        <Link to={"/addSchool"} state={{ state, city }}>
-          Add School
-        </Link>
-      </article>
-      <table>
-        {school?.map((ele, ind, arr) => {
-          return (
-            <tr>
-              <td>{ind + 1}</td>
-              <td>{}</td>
-              <td>{ele.organization}</td>
-              <td>{ele.contact_number}</td>
-              <td>{ele.contact_email}</td>
-              <td>{ele.state}</td>
-              <td>{ele.city}</td>
-              <td>{ele.status}</td>
-              <td>
-                <button>delete</button>{" "}
-                <Link to={"/updateFee"} state={ele.id}>
-                  update
-                </Link>
-              </td>
-            </tr>
-          );
-        })}
-      </table>
-    </section>
+    <>
+      <section className="sechoolreg">
+        <article className="imp">
+          <div className="Sc">School Registration</div>
+          <Link className="add" to={"/home/SchollRegistration"}>
+            School List
+          </Link>
+          <Link className="add1" to={"/addSchool"} state={{ state, city }}>
+            Add School
+          </Link>
+        </article>
+        <div className="heading">
+          <h6>SR NO. </h6>
+          <h6>SCHOOL NAME</h6>
+          <h6>CONTACT NO.</h6>
+          <h6>EMAIL</h6>
+          <h6>STATE</h6>
+          <h6>CITY</h6>
+          <h6>STATUS</h6>
+          <h6>ACTION</h6>
+        </div>
+        <table>
+          {school?.map((ele, ind, arr) => {
+            return (
+              <tr>
+                <td className="sr">{ind + 1}</td>
+                <td>{}</td>
+                <td className="org">{ele.organization}</td>
+                <td className="con">{ele.contact_number}</td>
+                <td className="mail">{ele.contact_email}</td>
+                <td className="state">{ele.state}</td>
+                <td className="city">{ele.city}</td>
+                <td className="status">{ele.status}</td>
+                <td>
+                  <button className="delete">
+                    <RiDeleteBin6Line />
+                  </button>
+                  <Link to={"/updateFee"} state={ele.id}>
+                    <TfiWrite className="update" />
+                  </Link>
+                </td>
+              </tr>
+            );
+          })}
+        </table>
+      </section>
+    </>
   );
 };
 

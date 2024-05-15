@@ -45,22 +45,31 @@ const Login = () => {
   return (
     <section className="sec">
       <form className="loginCard" onSubmit={handleSubmit}>
-        <h1>Login to Your Account</h1>
+        <h1 className="loginToYourAccount">Login to Your Account</h1>
         <input
           type="text"
           name="email"
+          className="log"
           placeholder="Email"
           id=" "
           onChange={handlechange}
         />
         <input
+          className="log"
           type="password"
           name="password"
           placeholder="Password"
           id=""
           onChange={handlechange}
-        />
-        <button type="submit">Sign in</button>
+        />{" "}
+        <br />
+        <a className="forgot" href="">
+          Forgot Password?
+        </a>
+        <br />
+        <button className="sub" type="submit">
+          Sign in
+        </button>
       </form>
     </section>
   );

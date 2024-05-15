@@ -32,7 +32,11 @@ const AsideBar = () => {
   return (
     <section className="Asidebar">
       {links.map((ele, index, arr) => {
-        return <Link to={ele.path}>{ele.element}</Link>;
+        return (
+          <Link className="dash" to={ele.path}>
+            {ele.element}
+          </Link>
+        );
       })}
     </section>
   );

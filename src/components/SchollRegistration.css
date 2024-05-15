@@ -2,9 +2,81 @@
   height: 100%;
   width: 85%;
   border: 1px solid;
+  overflow: auto;
 }
-.sechoolreg article {
+.imp {
   height: 7vh;
   width: 100%;
   border-bottom: 1px solid;
+}
+
+.Sc {
+  text-align: left;
+  font-size: larger;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.add {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-right: 150px;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.add1 {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  bottom: 19px;
+}
+.delete {
+  color: red;
+  position: relative;
+  left: 370px;
+}
+.update {
+  color: gray;
+  position: relative;
+  left: 370px;
+}
+.heading {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
+.sr {
+  position: relative;
+
+  left: 10px;
+}
+
+.org {
+  position: relative;
+  left: 140px;
+}
+.con {
+  position: relative;
+  left: 150px;
+}
+.mail {
+  position: relative;
+  left: 190px;
+}
+.state {
+  position: relative;
+  left: 185px;
+}
+.city {
+  position: relative;
+  left: 195px;
+}
+.status {
+  position: relative;
+  left: 240px;
 }
