@@ -1,0 +1,10 @@
+.sechoolreg {
+  height: 100%;
+  width: 85%;
+  border: 1px solid;
+}
+.sechoolreg article {
+  height: 7vh;
+  width: 100%;
+  border-bottom: 1px solid;
+}
